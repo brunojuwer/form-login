@@ -38,9 +38,14 @@ body {
   text-align: center;
 }
 
+.container .input-field {
+  position: relative;
+  width: 90%;
+}
+
 .container input {
   margin-top: 3rem;
-  width: 90%;
+  width: 100%;
   height: 4rem;
   background: #191a21;
   border-radius: 8px;
@@ -57,6 +62,19 @@ body {
 
 .container input + input {
   margin-top: 1rem;
+}
+
+.input-field label {
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 1.3rem;
+  left: 1rem;
+  transition: bottom 0.5s;
+  pointer-events: none;
+}
+
+.input-field input:focus + label, input:not(:placeholder-shown) + label {
+  bottom: 4.2rem;
 }
 
 .container button {
