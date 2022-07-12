@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+body {
+  height: 100vh;
+  background: #191a21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: #282a36;
+  width: 100%;
+  height: 700px;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+form span {
+  margin-top: -5rem;
+  color: #FFF;
+  font-size: 3rem;
+  font-weight: 500;
+  width: 90%;
+  text-align: center;
+}
+
+form input {
+  margin-top: 3rem;
+  width: 90%;
+  height: 4rem;
+  background: #191a21;
+  border-radius: 8px;
+  color: #fff;
+  border: 0;
+  padding: 1rem;
+  font-size: medium;
+}
+
+form input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px #1ed760;
+}
+
+form input + input {
+  margin-top: 1rem;
+}
+
+form button {
+  width: 90%;
+  margin-top: 2rem;
+  height: 4rem;
+  border-radius: 8px;
+  background: #1ed760;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
+
+  transition: background-color 0.2s;
+}
+
+form button:hover {
+  background: #17a147;
+}
+
+
+
+
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  } 
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%; 
+  }
+
+  form {
+    margin: 0 1rem;
+    max-width: 600px;
+    padding: 0.5rem;
+  }
+}
