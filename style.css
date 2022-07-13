@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins',sans-serif;
 }
 
 
@@ -30,7 +30,8 @@ body {
 }
 
 .container span {
-  margin-top: -5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
   color: #FFF;
   font-size: 3rem;
   font-weight: 500;
@@ -44,7 +45,7 @@ body {
 }
 
 .container input {
-  margin-top: 3rem;
+  margin-top: 2.3rem;
   width: 100%;
   height: 4rem;
   background: #191a21;
@@ -60,10 +61,6 @@ body {
   box-shadow: 0 0 0 2px #1ed760;
 }
 
-.container input + input {
-  margin-top: 1rem;
-}
-
 .input-field label {
   color: rgba(255, 255, 255, 0.6);
   position: absolute;
@@ -74,7 +71,7 @@ body {
 }
 
 .input-field input:focus + label, input:not(:placeholder-shown) + label {
-  bottom: 4.2rem;
+  bottom: 4.3rem;
 }
 
 .container button {
@@ -97,37 +94,38 @@ body {
 }
 
 
-.container .forgot-field {
-  margin: 2rem 0;
+.container .recovery-field {
+  margin: 2.5rem 0;
   width: 90%;
   text-align: center;
+
 }
 
-.container .forgot-field a {
+.container .recovery-field a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 
   transition: color 0.2s;
 }
 
-.container .forgot-field a:hover {
+.container .recovery-field a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
 
-.container .recovery-field {
+.container .create-account-field {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   width: 90%;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
-.container .recovery-field p {
+.container .create-account-field p {
   color: rgba(255, 255, 255, 0.6);
 }
   
 
-.container .recovery-field a {
+.container .create-account-field a {
   color: #1ed760;
   text-decoration: none;
   margin-left: 0.3rem;
@@ -135,8 +133,34 @@ body {
   transition: color 0.2s;
 }
 
-.container .recovery-field a:hover {
+.container .create-account-field a:hover {
   color: #17a147;
+}
+
+
+.social-media {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  width: 90%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  padding: 1rem;
+  font-size: 2rem;
+  width: 4rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 0.5s;
+}
+
+.fa:hover {
+  color: #1ed760;
 }
 
 
@@ -157,5 +181,16 @@ body {
     max-width: 600px;
     padding: 0.5rem;
     height: 600px;
+  }
+
+  .container span {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .fa {
+    font-size: 1.5rem;
   }
 }
